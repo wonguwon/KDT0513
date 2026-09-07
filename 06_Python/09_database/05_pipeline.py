@@ -77,4 +77,11 @@ print()
 for name, ok in checks:
     print(f"{name} : {'통과' if ok else '실패'}")
 
+"""
+    두 번 돌려도 행수는 그대로 멱등하다.
+    행이 두배가되거나 에러가 났다면 셋중 하나가 빠진거다.
+    - 유니크 제약조건이 없거나
+    - ON DUPLICATE KEY UPDATE, upsert를 사용하지 않았거나
+    - 정제데이터에 오류가 있거나
+"""
 conn.close()
