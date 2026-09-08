@@ -104,3 +104,11 @@ def build_dataset(shift_features=True):
     df = df.replace([np.inf, -np.inf], np.nan).dropna(subset=FEATURES).reset_index(drop=True)
 
     return df
+
+def time_split(df, test_ratio=0.2):
+    """시계열은 랜덤 분할하면 안됨"""
+
+    cutoff = df["date"].quantile(1 - test_ratio)    
+    train = df[df["date"] <= cutoff].reset_index(drop=True)
+    test = df[df["date"] > cutoff].reset_index(drop=True)
+    return train, test, cutoff 
