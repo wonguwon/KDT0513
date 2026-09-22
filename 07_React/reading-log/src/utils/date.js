@@ -1,4 +1,4 @@
-// 로컬 기준 YYYY-MM-DD (toISOString은 UTC라 밤늦게 날짜가 밀림)
+// 로컬 기준 YYYY-MM-DD
 export function todayString(d = new Date()) {
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, '0');
