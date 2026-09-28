@@ -1,0 +1,37 @@
+{
+  "categories": [
+    { "id": "food", "name": "식비", "type": "expense" },
+    { "id": "transport", "name": "교통", "type": "expense" },
+    { "id": "living", "name": "주거·통신", "type": "expense" },
+    { "id": "shopping", "name": "쇼핑", "type": "expense" },
+    { "id": "culture", "name": "문화·여가", "type": "expense" },
+    { "id": "salary", "name": "급여", "type": "income" },
+    { "id": "extra", "name": "부수입", "type": "income" }
+  ],
+  "transactions": [
+    { "id": "1", "type": "income", "date": "2026-08-25", "categoryId": "salary", "amount": 2800000, "memo": "8월 급여" },
+    { "id": "2", "type": "expense", "date": "2026-08-27", "categoryId": "living", "amount": 550000, "memo": "월세" },
+    { "id": "3", "type": "expense", "date": "2026-09-02", "categoryId": "food", "amount": 12000, "memo": "점심" },
+    { "id": "4", "type": "expense", "date": "2026-09-03", "categoryId": "transport", "amount": 55000, "memo": "교통카드 충전" },
+    { "id": "5", "type": "expense", "date": "2026-09-10", "categoryId": "culture", "amount": 15000, "memo": "영화" },
+    { "id": "6", "type": "income", "date": "2026-09-15", "categoryId": "extra", "amount": 150000, "memo": "중고거래" },
+    { "id": "7", "type": "expense", "date": "2026-08-03", "categoryId": "food", "amount": 38000, "memo": "장보기" },
+    { "id": "8", "type": "expense", "date": "2026-08-05", "categoryId": "transport", "amount": 55000, "memo": "교통카드 충전" },
+    { "id": "9", "type": "expense", "date": "2026-08-12", "categoryId": "shopping", "amount": 89000, "memo": "운동화" },
+    { "id": "10", "type": "expense", "date": "2026-08-18", "categoryId": "culture", "amount": 42000, "memo": "전시회" },
+    { "id": "11", "type": "expense", "date": "2026-08-20", "categoryId": "living", "amount": 65000, "memo": "휴대폰 요금" },
+    { "id": "12", "type": "income", "date": "2026-08-30", "categoryId": "extra", "amount": 200000, "memo": "외주 작업" },
+    { "id": "13", "type": "expense", "date": "2026-09-05", "categoryId": "food", "amount": 45000, "memo": "친구 저녁" },
+    { "id": "14", "type": "expense", "date": "2026-09-08", "categoryId": "shopping", "amount": 32000, "memo": "생활용품" },
+    { "id": "15", "type": "expense", "date": "2026-09-12", "categoryId": "living", "amount": 65000, "memo": "휴대폰 요금" },
+    { "id": "16", "type": "expense", "date": "2026-09-18", "categoryId": "food", "amount": 9500, "memo": "카페" },
+    { "id": "17", "type": "expense", "date": "2026-09-22", "categoryId": "culture", "amount": 27000, "memo": "도서 구입" },
+    { "id": "18", "type": "income", "date": "2026-09-25", "categoryId": "salary", "amount": 2800000, "memo": "9월 급여" },
+    { "id": "19", "type": "expense", "date": "2026-09-27", "categoryId": "living", "amount": 550000, "memo": "월세" }
+  ],
+  "budgets": [
+    { "id": "food", "amount": 300000 },
+    { "id": "transport", "amount": 100000 },
+    { "id": "culture", "amount": 80000 }
+  ]
+}

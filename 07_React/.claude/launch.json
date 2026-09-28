@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "money-log-api", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "money-log", "run", "server"], "port": 3001 },
+    { "name": "money-log-web", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "money-log", "run", "dev"], "port": 5173 }
+  ]
+}
